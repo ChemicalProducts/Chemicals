@@ -2,7 +2,7 @@
 
     $db = 'teedb';
     $username = 'root';
-    $password = '';
+    $password = '261994akk';
 
     // Create connection
     $conn = new mysqli('localhost', $username, $password, $db);

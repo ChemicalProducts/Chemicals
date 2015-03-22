@@ -20,9 +20,9 @@
             <script type="text/javascript">
                 $(document).ready(function() {
                      tr = $('#display2').find('tr');
-                     tr = $('#display').find('tr');
+                     tr1 = $('#display').find('tr');
                                
-                    tr.bind('click', function(event) {
+                    tr1.bind('click', function(event) {
                         number=$(this).find("td.c1").html();
                         name=$(this).find("td.c2").html();
                         company=$(this).find("td.c3").html();

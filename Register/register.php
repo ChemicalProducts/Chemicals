@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="../login/css_LogIn.css" rel="stylesheet">  
     <script src="_scripts_Eggrafi.js"></script>
       
       
      <script type="text/javascript" src="../js/jquery.min.js"></script>
-	    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	    <script type="text/javascript" src="../js/scripts.js"></script>
     <!---------------------------------------------------------------->
    

@@ -16,18 +16,10 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/style.css" rel="stylesheet">
-        <link href="../css/custom.css" rel="stylesheet" media="screen">
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-        <link href="../css/prettify.css" rel="stylesheet">
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/scripts.js"></script>
 
-	    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	    <script type="text/javascript" src="../js/scripts.js"></script>
-        
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="prosthiki/script_Prosthiki.js"></script>
 
         <script src="prosthiki/promitheftiki/script_promitheftria.js"></script>
@@ -37,7 +29,14 @@
         <script src="prosthiki/dda/script_dda.js"></script>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <script src="../js/jquery-1.9.1.js"></script>
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/custom.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link href="../css/prettify.css" rel="stylesheet">
+
+
         <script>
         
         $(document).ready(function(){

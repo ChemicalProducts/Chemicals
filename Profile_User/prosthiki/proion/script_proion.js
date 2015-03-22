@@ -48,7 +48,7 @@
 
                 console.log(constCompany_CommercialName);
                 // 3. Specify your action, location and Send to the server - Start
-                xhr.open('POST', 'prostiki/proion/getStixiaProiontosData.php');
+                xhr.open('POST', 'prosthiki/proion/getStixiaProiontosData.php');
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                 xhr.send("chemicalProduct_Name=" + chemicalProduct_Name +"&chemicalProduct_CommName="+chemicalProduct_CommName+"&chemicalProduct_use="
                 +chemicalProduct_use+"&chemicalProduct_extraChar="+chemicalProduct_extraChar+"&chemicalProduct_state="+chemicalProduct_state+"&chemicalProduct_storageAdd="+chemicalProduct_storageAdd

@@ -2,7 +2,7 @@
 <?php
 
 if($_POST){
-        $con =mysql_connect("localhost", "root", "");
+        $con =mysql_connect("localhost", "root", "261994akk");
         mysql_select_db("teedb");
         mysql_query ("set character_set_results='utf8'");
 

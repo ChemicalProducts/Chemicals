@@ -13,7 +13,7 @@
             <!--script src="js/less-1.3.3.min.js"></script-->
             <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
 
-            <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
             <link href="../css/style.css" rel="stylesheet">
             <link href="../css/custom.css" rel="stylesheet" media="screen">
             <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -24,7 +24,7 @@
           <![endif]-->
         
             <script type="text/javascript" src="../js/jquery.min.js"></script>
-	       <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	       <script type="text/javascript" src="../js/scripts.js"></script>
             <link href="media/css/jquery.dataTables.css" rel="stylesheet">
         <script src="media/js/jquery.js"></script>
