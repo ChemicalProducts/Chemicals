@@ -255,7 +255,7 @@
         <br><br>
         <div class="row">
             <div class="col-md-4 column"  style="text-align: left">
-        	   <input id="ButtonPrevious" class="btn btn-default" type="button" value="Previous" name="Step1" onclick="handleWizardPreviousStep2to1()" />
+        	   <input id="ButtonPrevious2" class="btn btn-default" type="button" value="Previous" name="Step1" onclick="handleWizardPreviousStep2to1()" />
 		    </div>
             <div class="col-sm-4"></div>
 		    <div class="col-md-4 column" style="text-align: right">

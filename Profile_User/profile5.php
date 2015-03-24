@@ -3,6 +3,8 @@
     session_start();
     session_unset();
     $_SESSION["username"] = "akkous01";
+    $_SESSION["suplCount"]=0;
+    $_SESSION["chemicalsCount"]=0;
 
 ?>
 <!DOCTYPE html>

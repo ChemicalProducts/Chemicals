@@ -12,6 +12,8 @@ foreach ( $_POST as $key=>$value ){
     }
 
 }
+    $_SESSION["suplCount"]++;
 
     print_r($_SESSION);
 ?>
+

@@ -1,17 +1,17 @@
-        var intTextBox=0;
+        var intSupll=0;
         var choiceCount=0;
 
         //FUNCTION TO ADD Company TEXT BOX 
         function addCompany(){
-            if (choiceCount < 10 && intTextBox < 20) {
-                intTextBox = intTextBox + 1;
+            if (choiceCount < 10 && intSupll < 20) {
+                intSupll = intSupll + 1;
                 choiceCount = choiceCount+1;
                 PostDataPromitheftiki();
                 var contentID = document.getElementById('entrycol');
                 var newTr = document.createElement('tr');
                 var name = $('#suplCompany_Name').val();
-                newTr.setAttribute('id','entry'+intTextBox);
-                newTr.innerHTML ='<td><strong>'+intTextBox+'</strong></td><td>'+name+'</td><td><input type="image" src="Deep_Edit.png" data-toggle="modal" data-target="#suplCompanyModal"></td><td><input type="image" src="delete-icon.png" onclick= "removeCompanyID('+intTextBox+');"></td>';
+                newTr.setAttribute('id','entry'+intSupll);
+                newTr.innerHTML ='<td><strong>'+intSupll+'</strong></td><td>'+name+'</td><td><input type="image" src="../../../images/Deep_Edit.png" data-toggle="modal" data-target="#suplCompanyModal"></td><td><input type="image" src="../../../images/delete-icon.png" onclick= "removeCompanyID('+intSupll+');"></td>';
 
                 contentID.appendChild(newTr);
 
@@ -65,7 +65,7 @@
                 }
             }
             // 2. Define what to do when xhrProm feed you the response from the server - Start
-            var countSuplCompany = intTextBox;
+            var countSuplCompany = intSupll;
             var suplCompany_Name = document.getElementById("suplCompany_Name").value;
             var suplCompany_CommercialName = document.getElementById("suplCompany_CommercialName").value;
             var suplCompany_OtherName = document.getElementById("suplCompany_OtherName").value;
@@ -139,9 +139,9 @@
             DeleteDataPromitheftiki(cnum);
             var contentID = document.getElementById('entrycol');
             contentID.removeChild(document.getElementById('entry'+cnum));
-            //intTextBox = intTextBox-1; this would break it
+            //intSupll = intSupll-1; this would break it
             choiceCount = choiceCount-1;
-            //intTextBox = intTextBox-1;
+            //intSupll = intSupll-1;
         }
 
         function clearInputsEterias(){

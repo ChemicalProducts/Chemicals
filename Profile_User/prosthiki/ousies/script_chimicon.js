@@ -1,18 +1,18 @@
-var intTextBox=0;
+                var intChemicals=0;
                 var choiceCount=0;
 
                 //FUNCTION TO ADD TEXT BOX ELEMENT
                 function addElement()
                 {
-                    if (choiceCount < 100 && intTextBox < 200) {
-                        intTextBox = intTextBox + 1;
+                    if (choiceCount < 100 && intChemicals < 200) {
+                        intChemicals = intChemicals + 1;
                         choiceCount = choiceCount+1;
                         PostDataXimikonOusion();
                         var contentID = document.getElementById('chemicalTable');
                         var newTBDiv = document.createElement('tr');
                         var labelName = $('#chemical_Name').val();
-                        newTBDiv.setAttribute('id','chemicaltexts'+intTextBox);
-                        newTBDiv.innerHTML ='<td><strong>'+intTextBox+'</strong></td><td>'+labelName+'</td><td><input type="image" src="Deep_Edit.png" data-toggle="modal" data-target="#chemicalModal"></td><td><input type="image" src="delete-icon.png" onclick= "removeElementID('+intTextBox+');"></td>'; 
+                        newTBDiv.setAttribute('id','chemicaltexts'+intChemicals);
+                        newTBDiv.innerHTML ='<td><strong>'+intChemicals+'</strong></td><td>'+labelName+'</td><td><input type="image" src="/../../../images/Deep_Edit.png" data-toggle="modal" data-target="#chemicalModal"></td><td><input type="image" src="../../../images/delete-icon.png" onclick= "removeElementID('+intChemicals+');"></td>';
                         contentID.appendChild(newTBDiv);
                         document.getElementById("chemical_Name").value = "";
                         document.getElementById("chemical_CAS").value = "";
@@ -46,12 +46,13 @@ var intTextBox=0;
                         if (xhrProm.readyState === 4) {
                             if (xhrProm.status == 200 && xhrProm.status < 300) {
                                 document.getElementById('asdf').innerHTML = xhrProm.responseText;
+                                console.log(xhrProm.responseText);
                                 console.log("okSupl");
                             }
                         }
                     }
                     // 2. Define what to do when xhrProm feed you the response from the server - Start
-                    var countChemical = intTextBox;
+                    var countChemical = intChemicals;
                     var chemical_Name = document.getElementById("chemical_Name").value;
                     var chemical_CAS = document.getElementById("chemical_CAS").value;
                     var chemical_EINECS = document.getElementById("chemical_EINECS").value;
@@ -77,7 +78,7 @@ var intTextBox=0;
                     var contentID = document.getElementById('chemicalTable');
                     contentID.removeChild(document.getElementById('chemicaltexts'+cnum));
                     contentID.removeChild(document.getElementById('newline'+cnum));
-                    //intTextBox = intTextBox-1; this would break it
+                    //intChemicals = intChemicals-1; this would break it
                     choiceCount = choiceCount-1;
                 }
 

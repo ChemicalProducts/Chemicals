@@ -12,6 +12,6 @@ foreach ( $_POST as $key=>$value ){
     }
 
 }
-
+$_SESSION["chemicalsCount"]++;
 print_r($_SESSION);
 ?>

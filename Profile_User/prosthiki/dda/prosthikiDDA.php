@@ -63,18 +63,18 @@
             <br>
             <div class="row">
                 <div class="col-sm-4">
-                <button type="button" class="btn btn-info">Προσορηνή Αποθήκευση</button>
+                <button type="button" class="btn btn-info" id="temp_save" onclick="addToDB(1);">Προσορηνή Αποθήκευση</button>
                 <button type="button" class="btn btn-danger">Τελική Αποθήκευση</button>
                 </div>
             </div>
             <br><br>
             <div class="row">
                 <div class="col-md-4 column"  style="text-align: left">
-                   <input id="ButtonPrevious" class="btn btn-default" type="button" value="Previous"  name="Step4" onclick="handleWizardPreviousStep5to4()" />
+                   <input id="ButtonPrevious5" class="btn btn-default" type="button" value="Previous"  name="Step4" onclick="handleWizardPreviousStep5to4()" />
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-md-4 column" style="text-align: right">
-                    <input id="ButtonNext" class="btn btn-default" type="button" value="Next" disabled="disabled" />
+                    <input id="ButtonNext5" class="btn btn-default" type="button" value="Next" disabled="disabled" />
                 </div>
             </div>
         </div>

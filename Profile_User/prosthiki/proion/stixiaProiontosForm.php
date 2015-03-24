@@ -93,11 +93,11 @@
             <br><br>
             <div class="row">
                 <div class="col-md-4 column"  style="text-align: left">
-                   <input id="ButtonPrevious" class="btn btn-default" type="button" value="Previous"  name="Step2" onclick="handleWizardPreviousStep3to2()" />
+                   <input id="ButtonPrevious3" class="btn btn-default" type="button" value="Previous"  name="Step2" onclick="handleWizardPreviousStep3to2()" />
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-md-4 column" style="text-align: right">
-                    <input id="ButtonNext" class="btn btn-default" type="button" value="Next" name="Step4" onClick="PostDataProion()" />
+                    <input id="ButtonNext3" class="btn btn-default" type="button" value="Next" name="Step4" onClick="PostDataProion()" />
                 </div>
                 </div>
             </form>
