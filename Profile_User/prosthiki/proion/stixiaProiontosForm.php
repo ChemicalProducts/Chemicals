@@ -1,7 +1,7 @@
     <div class="col-md-12 ">
         <div class="container">
         	<div class="row">
-                <form>
+                <form id="proionForm">
        	        <div class="panel-heading " >
                     <h2 class="panel-title col-sm-offset-1"><strong>Στοιχεία Χιμικού  Προιόντος</strong></h2>
                 </div>  
@@ -11,7 +11,7 @@
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="chemicalProduct_Name">Χημική Ονομασία:</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" name="chemicalProduct_Name" id="chemicalProduct_Name" />
+                        <input type="text" class="form-control" required=true name="chemicalProduct_Name" id="chemicalProduct_Name" />
                     </div>
                 </div>
                   
@@ -87,7 +87,7 @@
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="chemicalProduct_V">Όγκος Συσκευασίας:</label>
                     <div class="col-sm-6">
-                        <input type="number" class="form-control" name="chemicalProduct_V" id="chemicalProduct_V"/>
+                        <input type="number" class="form-control" required=true name="chemicalProduct_V" id="chemicalProduct_V"/>
                     </div>
                 </div>
             <br><br>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-md-4 column" style="text-align: right">
-                    <input id="ButtonNext3" class="btn btn-default" type="button" value="Next" name="Step4" onClick="PostDataProion()" />
+                    <input id="ButtonNext3" class="btn btn-default" type="submit" value="Next" name="Step4" onClick="checkInputProion()" />
                 </div>
                 </div>
             </form>

@@ -1,4 +1,22 @@
 
+    function checkInputProion(){
+        var proceed = true;
+        $("#proionForm input[required=true]").each(function() {
+            $(this).css('border-color', '');
+
+            if (!$.trim($(this).val())) {
+                $(this).css('border-color', 'red');
+                proceed = false;
+
+            }
+        });
+        if(proceed) {
+            PostDataProion();
+        }else{
+            return;
+        }
+        event.preventDefault();
+    }
             function PostDataProion() {
                 // 1. Create XHR instance - Start
                 var xhr;

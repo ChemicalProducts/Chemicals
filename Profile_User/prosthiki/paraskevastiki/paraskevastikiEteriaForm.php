@@ -1,3 +1,5 @@
+
+
     <div class="container">
         
         <div class="form-group">
@@ -471,7 +473,7 @@
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-md-4 column" style="text-align: right">
-                    <input id="ButtonNext1" class="btn btn-default" class="paraskevastiki_button" type="button" value="Next" name="Step2" onclick="PostDataPaeaskevastiki()"/>
+                    <input id="ButtonNext1" class="btn btn-default" class="paraskevastiki_button" value="Next" name="Step2" onclick="checkInputParaskevastikis()" type="submit" />
                 </div>
             </div>
         </form>

@@ -1,6 +1,25 @@
                 var intChemicals=0;
                 var choiceCount=0;
 
+                function checkInputOusias(){
+                    var proceed = true;
+                    $("#chemicalForm input[required=true]").each(function() {
+                        $(this).css('border-color', '');
+
+                        if (!$.trim($(this).val())) {
+                            $(this).css('border-color', 'red');
+                            proceed = false;
+
+                        }
+                    });
+                    if(proceed) {
+                        addElement();
+                        $('#chemicalModal').modal('hide');
+                    }else{
+                        return;
+                    }
+                    event.preventDefault();
+                }
                 //FUNCTION TO ADD TEXT BOX ELEMENT
                 function addElement()
                 {
@@ -12,7 +31,7 @@
                         var newTBDiv = document.createElement('tr');
                         var labelName = $('#chemical_Name').val();
                         newTBDiv.setAttribute('id','chemicaltexts'+intChemicals);
-                        newTBDiv.innerHTML ='<td><strong>'+intChemicals+'</strong></td><td>'+labelName+'</td><td><input type="image" src="/../../../images/Deep_Edit.png" data-toggle="modal" data-target="#chemicalModal"></td><td><input type="image" src="../../../images/delete-icon.png" onclick= "removeElementID('+intChemicals+');"></td>';
+                        newTBDiv.innerHTML ='<td><strong>'+intChemicals+'</strong></td><td>'+labelName+'</td><td><input type="image" src="../images/Deep_Edit.png" data-toggle="modal" data-target="#chemicalModal"></td><td><input type="image" src="../images/delete-icon.png" onclick= "removeElementID('+intChemicals+');"></td>';
                         contentID.appendChild(newTBDiv);
                         document.getElementById("chemical_Name").value = "";
                         document.getElementById("chemical_CAS").value = "";

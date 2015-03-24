@@ -220,4 +220,12 @@
 
 
     $conn->close();
+
+    $username=$_SESSION["username"];
+    $UserCompany=$_SESSION["UserCompany"];
+    session_unset ();
+    $_SESSION["username"] = $username;
+    $_SESSION["suplCount"]=0;
+    $_SESSION["chemicalsCount"]=0;
+    $_SESSION["UserCompany"]=$UserCompany;
 ?>

@@ -1,4 +1,31 @@
+    function checkInputParaskevastikis(){
+        console.log("eftase");
+        event.preventDefault();
+        var proceed = true;
+        $("#paraskevastiki_form input[required=true]").each(function() {
+            $(this).css('border-color', '');
+
+            if (!$.trim($(this).val())) {
+                $(this).css('border-color', 'red');
+                proceed = false;
+
+            }
+        });
+        if(proceed) {
+            PostDataPaeaskevastiki();
+        }else{
+            return;
+        }
+        console.log("eteliose");
+
+    }
+
+
+
+
+
     function PostDataPaeaskevastiki() {
+
             // 1. Create XHR instance - Start
             var xhr;
             if (window.XMLHttpRequest) {
@@ -47,18 +74,17 @@
             var constEmpl_email = document.getElementById("constEmpl_email").value;
 
 
-
-            console.log(constCompany_CommercialName);
             // 3. Specify your action, location and Send to the server - Start
             xhr.open('POST', 'prosthiki/paraskevastiki/getParaskevastikiEteriaData11.php');
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.send("constCompany_Name=" + constCompany_Name +"&constCompany_CommercialName="+constCompany_CommercialName+"&constCompany_OtherName="
-                +constCompany_OtherName+"&constCompany_legalForm="+constCompany_legalForm+"&constCompany_CEO="+constCompany_CEO+"&constCompany_Address="+constCompany_Address
-                +"&constCompany_PC="+constCompany_PC+"&constCompany_City="+constCompany_City+"&constCompany_country="+constCompany_country+"&constCompany_Phone="+constCompany_Phone+
-                "&constCompany_fax="+constCompany_fax+"&constCompany_email="+constCompany_email+"&constCompany_info="+constCompany_info+"&constEmpl_name="+constEmpl_name
-                +"&constEmpl_Surname="+constEmpl_Surname+"&constEmpl_address="+constEmpl_address+"&constEmpl_pc="+constEmpl_pc+"&constEmpl_city="+constEmpl_city+"&constEmpl_phone="+constEmpl_phone+
-                "&constEmpl_fax="+constEmpl_fax+"&constEmpl_email="+constEmpl_email);
-        }
+            xhr.send("constCompany_Name=" + constCompany_Name + "&constCompany_CommercialName=" + constCompany_CommercialName + "&constCompany_OtherName="
+            + constCompany_OtherName + "&constCompany_legalForm=" + constCompany_legalForm + "&constCompany_CEO=" + constCompany_CEO + "&constCompany_Address=" + constCompany_Address
+            + "&constCompany_PC=" + constCompany_PC + "&constCompany_City=" + constCompany_City + "&constCompany_country=" + constCompany_country + "&constCompany_Phone=" + constCompany_Phone +
+            "&constCompany_fax=" + constCompany_fax + "&constCompany_email=" + constCompany_email + "&constCompany_info=" + constCompany_info + "&constEmpl_name=" + constEmpl_name
+            + "&constEmpl_Surname=" + constEmpl_Surname + "&constEmpl_address=" + constEmpl_address + "&constEmpl_pc=" + constEmpl_pc + "&constEmpl_city=" + constEmpl_city + "&constEmpl_phone=" + constEmpl_phone +
+            "&constEmpl_fax=" + constEmpl_fax + "&constEmpl_email=" + constEmpl_email);
+
+    }
 
     function changeStep(){
 
