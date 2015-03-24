@@ -7,7 +7,7 @@
                 </div>
         </div>
         
-        <form>
+        <form id="paraskevastiki_form">
         <div class="col-md-12 column" name="paraskevastiki_form"> 
             
                 <h3>Στοιχεία Παρασκευαστικής Εραιρίας</h3>
@@ -475,6 +475,17 @@
                 </div>
             </div>
         </form>
+        <br><br>
+        <div class="col-md-12 column" id="buttonsArea" style="display: none">
+            <div class="col-md-4 column"  style="text-align: left">
+                <input id="ButtonPrevious1_1" class="btn btn-default" type="button" value="Previous"  disabled="disabled" name=""! />
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-md-4 column" style="text-align: right">
+                <input id="ButtonNext1_1" class="btn btn-default" class="paraskevastiki_button" type="button" value="Next" name="Step2" onclick="changeStep()"/>
+            </div>
+
+        </div>
         
     </div>
 

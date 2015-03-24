@@ -261,10 +261,7 @@
 		    <div class="col-md-4 column" style="text-align: right">
                 <input id="ButtonNext2" class="btn btn-default" type="button" value="Next" name="Step3" onClick="handleWizardNextStep2To3()" />
 		    </div>
-             <?php
-                print_r($_SESSION);
-            ?>
-        
+
         </div>
  
     </div> 

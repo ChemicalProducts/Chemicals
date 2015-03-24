@@ -73,7 +73,9 @@
             }
             mysql_close($con);
 
-?>
+            $_SESSION["UserCompany"]=$company;
+
+          ?>
 
 
 

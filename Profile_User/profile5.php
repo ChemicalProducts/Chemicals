@@ -40,26 +40,31 @@
 
 
         <script>
-        
+
         $(document).ready(function(){
             $('#c2').change(function(){
                 if(!this.checked)
                     $('#prom_form').fadeIn('slow');
                 else
                     $('#prom_form').fadeOut('slow');
+
             });
         });
-            
-            $(document).ready(function(){
+
+        $(document).ready(function(){
             $('#c1').change(function(){
-                if(!this.checked)
+                if(!this.checked) {
                     $('#paraskevastiki_form').fadeIn('slow');
-                else
+                    $('#buttonsArea').hide();
+                }
+                else {
                     $('#paraskevastiki_form').fadeOut('slow');
+                    $('#buttonsArea').show();
+                }
             });
         });
-                          
-    </script>
+
+        </script>
     </head>
 
 
