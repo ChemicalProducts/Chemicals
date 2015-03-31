@@ -388,7 +388,8 @@
             <!--------------------------------------------------------------------------------------------------------------------------------->
             
             <div class="row">
-                <h4>Στοιχεία Υπεύθυνου Επικοινωνίας</h4><br>
+                <h4>Στοιχεία Υπεύθυνου Επικοινωνίας</h4>
+                <br>
                 <hr>
                 <br>
                 <div class="form-group">
@@ -473,7 +474,7 @@
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-md-4 column" style="text-align: right">
-                    <input id="ButtonNext1" class="btn btn-default" class="paraskevastiki_button" value="Next" name="Step2" onclick="checkInputParaskevastikis()" type="submit" />
+                    <input id="ButtonNext1" class="btn btn-default" class="paraskevastiki_button" value="Next" name="Step2" onclick="checkInputParaskevastikis()" type="submit"/>
                 </div>
             </div>
         </form>
