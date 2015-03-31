@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,18 +7,27 @@
    <!----------------------------------------------------------------->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../login/css_LogIn.css" rel="stylesheet">  
-    <script src="_scripts_Eggrafi.js"></script>
-      
-      
-     <script type="text/javascript" src="../js/jquery.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	    <script type="text/javascript" src="../js/scripts.js"></script>
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+	    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/scripts.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <!---------------------------------------------------------------->
+   <!--<script >
    
-      
+                 
+    function Radio(){
+        document.getElementById("warning").style.display="none";
+    };
+   
+   
+   
+   </script>-->
+
+   <script src="_scripts_Eggrafi.js"></script>   
 
   </head>
   
@@ -708,7 +718,7 @@
              </form>
 
                 <div class="col-md-4 column"  style="text-align: left">
-        	   <input id="ButtonPrevious" class="btn btn-default" type="button" value="Previous"  disabled="disabled" name="" onclick="handleWizardPrevious()" />
+        	   <input id="ButtonPrevious" class="btn btn-default" type="button" value="Previous"  disabled="disabled" name="" onclick="handleWizardPrevious()"/>
 		    </div>
             <div class="col-sm-4"></div>
 		    <div class="col-md-4 column" style="text-align: right">
