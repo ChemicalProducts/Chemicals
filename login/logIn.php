@@ -8,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="css_LogIn.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/scripts.js"></script>
     <script src="../js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script>
@@ -35,16 +35,17 @@
                         var pass = $('#pass').val();
                             post_data = {
                                 'user'		: user,
-                                'pass'		: pass
+                                'pass'      :pass,
+                                'choise'	: x
                                 };
+                    
                             $.post('login_php.php', post_data, function(response){
-                                    window.alert(response.message);
                                     if(response.message =="ok"){
                                         if(x){
-                                            window.location="Profile_LeitourgouKentriko.php";
+                                            window.location="../Profile_Leitourgou2/Profile_LeitourgouKentriko.php";
                                         }
                                         if(y){
-                                            window.location="profile5.php";
+                                            window.location="../Profile_User/profile5.php";
                                         }
                                     }
                                 else{
