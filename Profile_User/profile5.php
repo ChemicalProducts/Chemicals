@@ -37,11 +37,38 @@
         <link href="../css/custom.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
         <link href="../css/prettify.css" rel="stylesheet">
+        <link href="../Profile_Leitourgou2/media/css/jquery.dataTables.css" rel="stylesheet">
+        <script src="../Profile_Leitourgou2/media/js/jquery.js"></script>
+        <script src="../Profile_Leitourgou2/media/js/jquery.dataTables.js"></script>
+        <style>
+            tfoot input {
+                    width: 100%;
+                    padding: 3px;
+                    box-sizing: border-box;
+                }
+        </style>
 
+ 
 
         <script>
 
         $(document).ready(function(){
+            var t = $('#example').DataTable();
+            var counter = 1;
+            $('#addRow').on( 'click', function () {
+                t.row.add( [
+                    counter +'.1',
+                    counter +'.2',
+                    counter +'.3',
+                    counter +'.4',
+                    counter +'.5'
+                ] ).draw();
+
+                counter++;
+            } );
+
+            // Automatically add a first row of data
+            $('#addRow').click();
             $('#c2').change(function(){
                 if(!this.checked)
                     $('#prom_form').fadeIn('slow');
