@@ -3,7 +3,7 @@
     $servername = "localhost";
     $db = 'teedb';
     $username = 'root';
-    $password = '';
+    $password = '261994akk';
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
@@ -99,7 +99,7 @@
             $_SESSION["username"] = $userName;
  
 
-        header( "location: profile5.php");
+        header( "location: ../Profile_User/profile5.php");
     }
 
 ?>

@@ -1,4 +1,6 @@
 <?php
+//If directory doesnot exists create it.
+$output_dir = "uploads/";
 
 if(isset($_FILES["myfile"])){
 	
@@ -53,7 +55,7 @@ if(isset($_FILES["myfile"])){
             $id = $row["id"];
             
             session_start();
-            $_SESSION["PDF_id"] = $id;
+            $_SESSION["IMG_id"] = $id;
 
             $conn->close();
             
@@ -61,7 +63,7 @@ if(isset($_FILES["myfile"])){
     	}
     
     }
-    echo json_encode("File $fileName uploaded");
+    echo json_encode("File $fileName uploaded IMG_ID: $id");
  
 }
 

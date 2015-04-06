@@ -27,35 +27,70 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <h4>Προσθήκη ΔΔΑ</h4>
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <span class="btn btn-primary btn-file">
-                                Browse&hellip; <input type="file" multiple>
-                            </span>
-                        </span>
-                        <input type="text" class="form-control" readonly>
-                    </div>
-                    <span class="help-block">
-                        Το αρχείο πρέπει να είναι σε PDF μορφή.
-                    </span>
+                        <h4>Προσθήκη ΔΔΑ</h4>
+                        <div id="mulitplefileuploaderDDA">Upload</div>
+
+                        <div id="statusDDA"></div>
+                       
+                        <script>
+
+                            $(document).ready(function()
+                            {
+
+                            var settings = {
+                                url: "prosthiki/dda/uploadDDA.php",
+                                method: "POST",
+                                allowedTypes:"pdf",
+                                fileName: "myfile",
+                                multiple: false,
+                                onSuccess:function(files,data,xhr)
+                                {
+                                    $("#statusDDA").html("<font color='green'>Upload is success</font>");
+
+                                },
+                                onError: function(files,status,errMsg)
+                                {		
+                                    $("#statusDDA").html("<font color='red'>Upload is Failed</font>");
+                                }
+                            }
+                            $("#mulitplefileuploaderDDA").uploadFile(settings);
+
+                            });
+                        </script>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-sm-4">
-                    <h4>Προσθήκη Ετικέτας Προϊόντος</h4>
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <span class="btn btn-primary btn-file">
-                                Browse&hellip; <input type="file" multiple>
-                            </span>
-                        </span>
-                        <input type="text" class="form-control" readonly>
-                    </div>
-                    <span class="help-block">
-                        Το αρχείο πρέπει να είναι σε PDF μορφή.
-                    </span>
+                    
+                        <h4>Προσθήκη Ετικέτας Προϊόντος</h4>
+                        <div id="mulitplefileuploaderIMG">Upload</div>
+
+                        <div id="statusIMG"></div>
+                       
+                        <script>
+
+                            $(document).ready(function(){
+
+                            var settings = {
+                                url: "prosthiki/dda/uploadIMG.php",
+                                method: "POST",
+                                allowedTypes:"pdf",
+                                fileName: "myfile",
+                                multiple: false,
+                                onSuccess:function(files,data,xhr){
+                                    $("#statusIMG").html("<font color='green'>Upload is success</font>");
+                                    console.log(xhr.response);
+
+                                },
+                                onError: function(files,status,errMsg){		
+                                    $("#statusIMG").html("<font color='red'>Upload is Failed</font>");
+                                }
+                            }
+                            $("#mulitplefileuploaderIMG").uploadFile(settings);
+
+                            });
+                        </script>
                 </div>
             </div>
 

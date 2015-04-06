@@ -45,6 +45,7 @@
                                             window.location="../Profile_Leitourgou2/Profile_LeitourgouKentriko.php";
                                         }
                                         if(y){
+                                        
                                             window.location="../Profile_User/profile5.php";
                                         }
                                     }
@@ -125,7 +126,7 @@
         </div>
         <br>
         <br>
-          <div   onclick="loginCheck();"class="center"><a href="register.html">Εγγραφή Χρήστη</a></div>   
+          <div  class="center"><a href="../Register/register.php">Εγγραφή Χρήστη</a></div>   
     
     
       </div>

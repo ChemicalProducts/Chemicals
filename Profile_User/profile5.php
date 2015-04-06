@@ -40,6 +40,12 @@
         <link href="../Profile_Leitourgou2/media/css/jquery.dataTables.css" rel="stylesheet">
         <script src="../Profile_Leitourgou2/media/js/jquery.js"></script>
         <script src="../Profile_Leitourgou2/media/js/jquery.dataTables.js"></script>
+        
+        <link href="https://rawgithub.com/hayageek/jquery-upload-file/master/css/uploadfile.css" rel="stylesheet">
+
+<script src="https://rawgithub.com/hayageek/jquery-upload-file/master/js/jquery.uploadfile.min.js"></script>
+        
+        
         <style>
             tfoot input {
                     width: 100%;
@@ -132,7 +138,7 @@
                 </div>
             </div>
             <div id="asdf"></div>
-            <?php print_r($_SESSION);?>
+       
         </div>
     </body>
 
